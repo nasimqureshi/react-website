@@ -11,9 +11,9 @@ const Header = () => {
     <> 
       <div className="black-overlay w-full h-full fixed duration-500" style={{
         opacity: toggle ? 1 : 0,
-
-      }}>
-        <div className='w-[500px] bg-white h-full absolute duration-[600ms]'
+        visibility: toggle ?  'visible' : 'hidden',
+        }}>
+        <div className='w-[500px] bg-white h-full absolute duration-[400ms]'
         style={{
           left: toggle ? '0%': '-100%'
 
@@ -29,9 +29,9 @@ const Header = () => {
             </div>
             
             <div className=''>
-                <span className='font-bold border-b-[3px] border-[black]'>Richmond, </span>
-                Houston, Texas, United States <RxCaretDown  fontSize={25} className='inline  text-[#fc8019]
-                cursor=pointer' onClick={showSideMenu}/>
+              <span className='font-bold border-b-[3px] border-[black]'>Richmond</span>Houston,
+              Richmond, United States <RxCaretDown fontSize={25} className='inline text-[#fc8019]
+              cursor-pointer' onClick={showSideMenu} />
             </div>
           </div>
         </header>
